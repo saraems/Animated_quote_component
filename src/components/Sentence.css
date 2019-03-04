@@ -1,0 +1,30 @@
+.sentence_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+p {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    margin: 0.5em 0 0.5em 0;
+
+}
+
+h1 {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 15% 0 0.5em 0;
+}
+
+
+
+
+
+
+
