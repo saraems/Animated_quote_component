@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f3357c7acf5a68f78f73",
+    "revision": "5a77c92f150918136506",
     "url": "/sentence_component_CL/static/css/main.a0bd3106.chunk.css"
   },
   {
-    "revision": "f3357c7acf5a68f78f73",
-    "url": "/sentence_component_CL/static/js/main.f3357c7a.chunk.js"
+    "revision": "5a77c92f150918136506",
+    "url": "/sentence_component_CL/static/js/main.5a77c92f.chunk.js"
   },
   {
     "revision": "2a5ecb0e3a6ee9160303",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/sentence_component_CL/static/js/2.38c41808.chunk.js"
   },
   {
-    "revision": "b85d820c52ed87513ff82c03cb15936f",
+    "revision": "8385aa69a4a048b406cba576f2c9f81c",
     "url": "/sentence_component_CL/index.html"
   }
 ];
