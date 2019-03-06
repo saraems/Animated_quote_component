@@ -9,7 +9,7 @@ class Sentence extends Component {
         super(props);
         this.state = {
             arr: this.props.sentences,
-            time: this.props.time,
+            letterTiming: this.props.time || 500,
             fullSentence: "",
             letterByLetter: ""
         }
@@ -19,7 +19,7 @@ class Sentence extends Component {
 
         this.waitForLetter = async function wait() {
             return new Promise((resolve) => {
-                setTimeout(resolve, this.state.time);
+                setTimeout(resolve, this.state.letterTiming);
             });
         };
 
