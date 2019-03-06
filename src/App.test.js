@@ -1,9 +1,10 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import ReactDOM from 'react-dom';
 
 import App from './App';
 import Sentence from './components/Sentence'
+
 
 
 it('App renders without crashing', () => {
@@ -12,34 +13,62 @@ it('App renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
+// mock component's props and function
+const time = 100;
+const sentences = ["Ala", "Ola"];
+
+function later(delay) {
+    return new Promise(function(resolve) {
+        setTimeout(resolve, delay);
+    });
+}
 
 describe('<Sentence />', () => {
+
+    const sentenceComponent = shallow(<Sentence time={ time } sentences={ sentences }/>);
+    const sentencesArray = sentenceComponent.state().arr;
+
+
     it('component renders h1 HTML element', () => {
-      const sentenceComponent = shallow(<Sentence/>);
       expect(sentenceComponent.find('h1').length).toEqual(1);
     });
 
     it('component renders p HTML element', () => {
-      const sentenceComponent = shallow(<Sentence/>);
       expect(sentenceComponent.find('p').length).toEqual(1);
     });
 
-    it('setting proper state out of props', () => {
-        const wrapper = mount(<Sentence time={ 100 } sentences={ ["Ala"] }/>);
-        expect(wrapper.state().letterTiming).toBe(100);
-        expect(wrapper.state().arr).toEqual(["Ala"]);
+    it('state is properly set from props', () =>
+    {
+        expect(sentenceComponent.state().letterTiming).toBe(time);
+        expect(sentenceComponent.state().arr).toEqual(sentences);
     });
 
 
+    test("HTML's elements properly display sentences passed through props in time function", async () => {
 
-    // const sentenceComponent = mount(<Sentence/>);
-    // expect.assertions(1);
-    // // const data = await ;
+        for (let i = 0; i < sentencesArray.length; i++) {
+            expect(sentenceComponent.state().fullSentence).toEqual(sentencesArray[i]);
+            expect(sentenceComponent.find('h1').text()).toEqual(sentencesArray[i]);
+            for (let j = 0; j < sentencesArray[i].length; j++) {
+                await later(time);
+                expect(sentenceComponent.state().letterByLetter).toEqual(sentencesArray[i].slice(0, j+1));
+                expect(sentenceComponent.find('p').text()).toEqual(sentencesArray[i].slice(0, j+1));
+            }
+            await later(2000);
+        }
+    });
 
-    // const insertedSentence = expect(sentenceComponent.state('arr'));
-    // expect(sentenceComponent.state('fullSentence')).toBe(insertedSentence[0]);
+    test("state and HTML p element are cleaned after each full sentence iteration", async () => {
 
-    // expect(sentenceComponent.find('p').length).toEqual(0)
+        for (let i = 0; i < sentencesArray.length; i++) {
+            for (let j = 0; j < sentencesArray[i].length; j++) {
+                await later(time);
+            }
+            await later(2000);
+            expect(sentenceComponent.state().letterByLetter).toEqual('');
+            expect(sentenceComponent.find('p').text()).toEqual('');
+        }
+    });
   }
 );
 

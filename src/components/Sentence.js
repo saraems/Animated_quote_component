@@ -35,11 +35,11 @@ class Sentence extends Component {
                     this.setState({
                         fullSentence: this.state.arr[i]
                     });
-                    console.log(this.state.arr[i]);
+                    // console.log(this.state.arr[i]);
                     let sentence = this.state.arr[i];
                     for (let j = 0; j < this.state.arr[i].length; j++) {
                         await this.waitForLetter();
-                        console.log(sentence[j]);
+                        // console.log(sentence[j]);
                         this.setState({
                             letterByLetter: this.state.letterByLetter += sentence[j]
                         })
