@@ -8,7 +8,7 @@ class Sentence extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            arr: this.props.sentences,
+            arr: this.props.sentences || ["Hello world"],
             letterTiming: this.props.time || 500,
             fullSentence: "",
             letterByLetter: ""
