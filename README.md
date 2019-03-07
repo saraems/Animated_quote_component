@@ -32,7 +32,7 @@ After rendering in both HTML elements full sentence from quotes array component 
 
 ![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
 
-
+Code is tested with Jest tests, its coverage equals approximately 70%. Tests can be run in console with `CI=true npm test` command.
 
 # Animowany komponent z cytatami | PL | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
 
@@ -68,6 +68,7 @@ Po wyrenderowaniu w obu elementach HTML pełnego zdania z elementu tablicy kompo
 
 ![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
 
+Pokrycie kodu testami Jest wynosi ok 70%. Testy można uruchamiać w konsoli za pomocą komendy `CI = true npm test`.
 
 -----------------------------------------------------
 
