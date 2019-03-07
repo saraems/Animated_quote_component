@@ -1,44 +1,77 @@
-# Quote animated component | ENG
+# Animated quotes component | ENG | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
 
-In the project directory, you can run:
+This React component created as a Sentence class which extends React.Component class, displays quotes letter by letter passed as an array of strings through props. 
 
-### `npm start`
+Quotes are rendering in a infinitive loop in two HTML elements: header(h1) and paragraph(p).
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+`h1` element renders full quote (single array's string element). 
 
-### `npm test`
+`p` element renders quote from h1 element letter by letter with decelerated delay/speed passed to Sentence component through props. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```ruby
+render() {
+        return (
+            <div className='sentence_container'>
+                <h1>{ this.state.fullSentence }</h1>
+                <p>{ this.state.letterByLetter }</p>
+            </div>
+        );
+    }
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After rendering in both HTML elements full sentence from quotes array component waits 2000ms and then displays next array's element (sentence) or if the passed array has only one argument it displays again the array from the beginning. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![quote_component](https://user-images.githubusercontent.com/43315389/53941742-342cf600-40b9-11e9-86c3-b711cd947e6a.JPG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`Default component's props values` if nothing will be passed: 
+```ruby
+<Sentence time={ 500 } sentences={ [Ala] }/>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Animowany komponent z cytatami | PL | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
 
-## Learn More
+Komponent Sentence będący instancją klasy React.Component, renderuje na stronie zdania przekazane w propsach jako tablica łańcuchów (zdań będących stringami) litera po literze każdy z elementów.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Zdania, czy też cytaty renderują się w nieskończonej pętli w dwóch elementach HTML: w nagłówku (h1) oraz w paragfie (p).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-# Animowany komponent z cytatami | PL
+Element `h1` renderuje pełny cytat (pojedyńczy element tablicy).
+
+element `p` renderuje cytat z elementu h1 litera po literze z prędkością przekazywaną do komponentu Sentence poprzez propsy.
+
+
+```ruby
+renderowanie() {
+         powrót (
+             <div className = 'sentence_container'>
+                 <h1> {this.state.fullSentence} </ h1>
+                 <p> {this.state.letterByLetter} </ p>
+             </ div>
+         );
+     }
+```
+
+Po wyrenderowaniu w obu elementach HTML pełnego zdania z elementu tablicy komponent czeka 2000ms, a następnie wyświetla w ten sam sposów następny element tablicy. Jeżeli przekazana tablica ma tylko jeden argument, komppnent wyświetla ponownie jego pierwszy element.
+
+![quote_component](https://user-images.githubusercontent.com/43315389/53941742-342cf600-40b9-11e9-86c3-b711cd947e6a.JPG)
+
+
+![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
+
+`Domyślne wartości propsów` jeśeli żadne nie zostaną zadeklarowane w komponencie: 
+```ruby
+<Sentence time={ 500 } sentences={ [Ala] }/>
+```
+
+-----------------------------------------------------
+
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
