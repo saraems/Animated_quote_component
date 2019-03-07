@@ -1,4 +1,4 @@
-# Animated quotes component | ENG | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
+# Animated quote component | ENG | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
 
 This React component created as a Sentence class which extends React.Component class, displays quotes letter by letter passed as an array of strings through props. 
 
