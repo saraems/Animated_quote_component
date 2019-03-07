@@ -6,9 +6,12 @@ Quotes are rendering in a infinitive loop in two HTML elements: header(h1) and p
 
 
 `h1` element renders full quote (single array's string element). 
-
 `p` element renders quote from h1 element letter by letter with decelerated delay/speed passed to Sentence component through props. 
 
+`Default component's props values` if nothing will be passed: 
+```ruby
+<Sentence time={ 500 } sentences={ [Ala] }/>
+```
 
 ```ruby
 render() {
@@ -29,11 +32,6 @@ After rendering in both HTML elements full sentence from quotes array component 
 ![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
 
 
-`Default component's props values` if nothing will be passed: 
-```ruby
-<Sentence time={ 500 } sentences={ [Ala] }/>
-```
-
 
 # Animowany komponent z cytatami | PL | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
 
@@ -42,10 +40,14 @@ Komponent Sentence będący instancją klasy React.Component, renderuje na stron
 Zdania, czy też cytaty renderują się w nieskończonej pętli w dwóch elementach HTML: w nagłówku (h1) oraz w paragfie (p).
 
 
-Element `h1` renderuje pełny cytat (pojedyńczy element tablicy).
+`h1` renderuje pełny cytat (pojedyńczy element tablicy).
+ `p` renderuje cytat z elementu h1 litera po literze z prędkością przekazywaną do komponentu Sentence poprzez propsy.
 
-element `p` renderuje cytat z elementu h1 litera po literze z prędkością przekazywaną do komponentu Sentence poprzez propsy.
 
+`Domyślne wartości propsów` jeśeli żadne nie zostaną zadeklarowane w komponencie: 
+```ruby
+<Sentence time={ 500 } sentences={ [Ala] }/>
+```
 
 ```ruby
 renderowanie() {
@@ -65,10 +67,6 @@ Po wyrenderowaniu w obu elementach HTML pełnego zdania z elementu tablicy kompo
 
 ![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
 
-`Domyślne wartości propsów` jeśeli żadne nie zostaną zadeklarowane w komponencie: 
-```ruby
-<Sentence time={ 500 } sentences={ [Ala] }/>
-```
 
 -----------------------------------------------------
 
