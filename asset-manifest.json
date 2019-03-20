@@ -1,13 +1,13 @@
 {
-  "main.css": "/saraems/Agitnimated_quote_component/static/css/main.ab5328e0.chunk.css",
-  "main.js": "/saraems/Agitnimated_quote_component/static/js/main.eed5807f.chunk.js",
-  "main.js.map": "/saraems/Agitnimated_quote_component/static/js/main.eed5807f.chunk.js.map",
-  "runtime~main.js": "/saraems/Agitnimated_quote_component/static/js/runtime~main.50055894.js",
-  "runtime~main.js.map": "/saraems/Agitnimated_quote_component/static/js/runtime~main.50055894.js.map",
-  "static/js/2.7320ae2e.chunk.js": "/saraems/Agitnimated_quote_component/static/js/2.7320ae2e.chunk.js",
-  "static/js/2.7320ae2e.chunk.js.map": "/saraems/Agitnimated_quote_component/static/js/2.7320ae2e.chunk.js.map",
-  "index.html": "/saraems/Agitnimated_quote_component/index.html",
-  "precache-manifest.40871cc46ca0906142ab461f09f7fb44.js": "/saraems/Agitnimated_quote_component/precache-manifest.40871cc46ca0906142ab461f09f7fb44.js",
-  "service-worker.js": "/saraems/Agitnimated_quote_component/service-worker.js",
-  "static/css/main.ab5328e0.chunk.css.map": "/saraems/Agitnimated_quote_component/static/css/main.ab5328e0.chunk.css.map"
+  "main.css": "/Animated_quote_component/static/css/main.ab5328e0.chunk.css",
+  "main.js": "/Animated_quote_component/static/js/main.0d700ef6.chunk.js",
+  "main.js.map": "/Animated_quote_component/static/js/main.0d700ef6.chunk.js.map",
+  "runtime~main.js": "/Animated_quote_component/static/js/runtime~main.ecdc7a8e.js",
+  "runtime~main.js.map": "/Animated_quote_component/static/js/runtime~main.ecdc7a8e.js.map",
+  "static/js/2.7320ae2e.chunk.js": "/Animated_quote_component/static/js/2.7320ae2e.chunk.js",
+  "static/js/2.7320ae2e.chunk.js.map": "/Animated_quote_component/static/js/2.7320ae2e.chunk.js.map",
+  "index.html": "/Animated_quote_component/index.html",
+  "precache-manifest.500c09a9819924c7539c01c1c9e93401.js": "/Animated_quote_component/precache-manifest.500c09a9819924c7539c01c1c9e93401.js",
+  "service-worker.js": "/Animated_quote_component/service-worker.js",
+  "static/css/main.ab5328e0.chunk.css.map": "/Animated_quote_component/static/css/main.ab5328e0.chunk.css.map"
 }
