@@ -1,4 +1,4 @@
-# Animated quote component | ENG | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
+# Animated quote component | ENG | [GitHubPage](https://saraems.github.io/Animated_quote_component/)
 
 This React component created as a Sentence class which extends React.Component class, displays quotes letter by letter passed as an array of strings through props. 
 
@@ -27,14 +27,11 @@ render() {
 
 After rendering in both HTML elements full sentence from quotes array component waits 2000ms and then displays next array's element (sentence) or if the passed array has only one argument it displays again the array from the beginning. 
 
-![quote_component](https://user-images.githubusercontent.com/43315389/53941742-342cf600-40b9-11e9-86c3-b711cd947e6a.JPG)
-
-
 ![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
 
 Code is tested with Jest tests, its coverage equals approximately 70%. Tests can be run in console with `CI=true npm test` command.
 
-# Animowany komponent z cytatami | PL | [GitHubPage](https://saraems.github.io/sentence_component_CL/)
+# Animowany komponent z cytatami | PL | [GitHubPage](https://saraems.github.io/Animated_quote_component/)
 
 Komponent Sentence będący instancją klasy React.Component, renderuje na stronie zdania przekazane w propsach jako tablica łańcuchów (zdań będących stringami) litera po literze każdy z elementów.
 
@@ -62,9 +59,6 @@ renderowanie() {
      }
 ```
 Po wyrenderowaniu w obu elementach HTML pełnego zdania z elementu tablicy komponent czeka 2000ms, a następnie wyświetla w ten sam sposów następny element tablicy. Jeżeli przekazana tablica ma tylko jeden argument, komppnent wyświetla ponownie jego pierwszy element.
-
-![quote_component](https://user-images.githubusercontent.com/43315389/53941742-342cf600-40b9-11e9-86c3-b711cd947e6a.JPG)
-
 
 ![quote_component_2](https://user-images.githubusercontent.com/43315389/53941767-45760280-40b9-11e9-84be-47041eb9672e.JPG)
 
