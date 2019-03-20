@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sentence_component_CL/precache-manifest.9a3f9c7b242aad40a09b7dc6ce0854c1.js"
+  "/saraems/Agitnimated_quote_component/precache-manifest.40871cc46ca0906142ab461f09f7fb44.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/sentence_component_CL/index.html", {
+workbox.routing.registerNavigationRoute("/saraems/Agitnimated_quote_component/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
